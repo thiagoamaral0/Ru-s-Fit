@@ -70,7 +70,7 @@ main {
 
 /* Slogan */
 #slogan {
-    background: url('foto.jpg') no-repeat center center/cover;
+    background: url('../images/foto.jpg') no-repeat center center/cover;
     padding: 120px 0;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
