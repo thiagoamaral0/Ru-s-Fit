@@ -340,3 +340,70 @@ footer {
     }
 }
 
+#student-nutrition {
+    background-color: #333; /* Fundo escuro */
+    color: #f1f1f1; /* Texto branco */
+    border-radius: 10px;
+    padding: 40px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#student-nutrition h2 {
+    font-size: 2rem;
+    color: #388E3C; /* Verde saudável */
+    margin-bottom: 20px;
+}
+
+#student-nutrition p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.nutrition-topics {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.topic {
+    background-color: #444; /* Fundo escuro para os tópicos */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+}
+
+.topic-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px;
+}
+
+.topic h3 {
+    font-size: 1.5rem;
+    color: #81C784; /* Verde mais suave */
+    margin-bottom: 10px;
+}
+
+.topic p {
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: rgba(56, 142, 60, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .nutrition-topics {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
