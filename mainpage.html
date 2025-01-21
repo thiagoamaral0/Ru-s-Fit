@@ -1,55 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ru's Fit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
     <header>
-        
         <nav>
-            <a href="#slogan">Imagem logo</a>
-            <a href="#about">Sobre nós</a>
-            <a href="#slider">Cardápio</a>
-            <a href="#modal">Contate nos</a>
+            <a href="#slogan" class="logo">Ru's Fit</a>
+            <ul>
+                <li><a href="#about">Sobre nós</a></li>
+                <li><a href="#slider">Cardápio</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
         <!-- Slogan com imagem -->
         <section id="slogan">
-            
-            <p>"Comida saudável para uma vida universitária saudável"</p>
+            <div class="content">
+                <p class="slogan-text">Comida saudável para uma vida universitária saudável</p>
+            </div>
         </section>
 
         <!-- Sobre nós -->
-        <section id="about">
-            <h2>Sobre nós</h2>
-            <p>Dedicados ao preparo e a entrega de refeições saudáveis para universitários.</p>
+        <section id="about" class="section-padding">
+            <div class="content">
+                <h2>Sobre nós</h2>
+                <p>Dedicados ao preparo e à entrega de refeições saudáveis para universitários. Priorizamos nutrição, praticidade e sabor!</p>
+            </div>
         </section>
 
-        <!-- Slider  -->
-        <section id="slider">
-            <h2>Cardápio (slider com imagens de comida)</h2>
-            
+        <!-- Cardápio (Slider) -->
+        <section id="slider" class="section-padding">
+            <h2>Cardápio Fitness</h2>
+            <div class="slider-container">
+                <div class="slide">
+                    <img src="foto.jpg" alt="Refeição fitness 1">
+                    <p>Salada de Quinoa com Abacate Fresco</p>
+                </div>
+                <div class="slide">
+                    <img src="foto2.jpeg" alt="Refeição fitness 2">
+                    <p>Peito de Frango Grelhado com Brócolis</p>
+                </div>
+                <div class="slide">
+                    <img src="foto3.webp" alt="Refeição fitness 3">
+                    <p>Wrap Integral com Atum e Vegetais</p>
+                </div>
+            </div>
         </section>
 
-        <!-- Imagem -->
-        <section id="image">
-            <h2>Uma imagem de comida qualquer que chame atenção e com frase de efeito</h2>
-            <img src="example.jpg" alt="Imagem" />
+        <!-- Imagem com frase -->
+        <section id="image" class="section-padding">
+            <div class="content">
+                <h2>Ainda não acredita? Veja os depoimentos:</h2>
+                <button class="btn-depoimentos">Veja as opiniões</button>
+        
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="depoimentos">
+                            <div class="depoimento">
+                                
+                                <p>"A comida é deliciosa e me ajuda a manter a forma!"</p>
+                                <div class="estrelas">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p>- Ana Silva</p>
+                            </div>
+                            <div class="depoimento">
+                                
+                                <p>"O RU tava paia, agora tá massa"</p>
+                                <div class="estrelas">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p>- Ana Não Silva</p>
+                            </div>
+
+                            <div class="depoimento">
+                                
+                                <p>"Valendo"</p>
+                                <div class="estrelas">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p>- Ana Mais ou Menos Silva</p>
+                            </div>
+
+                            <div class="depoimento">
+                                
+                                <p>"Meh"</p>
+                                <div class="estrelas">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p>- Ana MUITO Silva</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- Modal -->
-        <section id="modal">
-            <h2>Modal para alguma coisa sei la modal me da medo</h2>
-            
+        <!-- Contato -->
+        <section id="contact" class="section-padding">
+            <div class="content">
+                <h2>Fale Conosco</h2>
+                <p>Tem alguma dúvida ou quer pedir sua refeição? Entre em contato agora!</p>
+                <p>Instagram: @rusfit | Localização: Rua XYZ, nº 123</p>
+            </div>
         </section>
+
     </main>
 
     <footer>
-        <p>instagram, localização, e tals</p>
+        <p>&copy; 2025 Ru's Fit. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
+
+
 </html>
