@@ -315,6 +315,45 @@ footer {
     }
 }
 
+.btn-depoimentos {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-depoimentos:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.btn-depoimentos:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(72, 182, 72, 0.7);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn-depoimentos:active {
+    animation: pulse 0.5s ease-in-out;
+}
+
+
 #order-now {
     text-align: center;
     background-color: #444;
