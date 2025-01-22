@@ -241,8 +241,8 @@ footer {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     padding: 20px;
     transition: opacity 0.3s ease-in-out;
-    width: 90%; /* Responsivo: Usa 90% da largura em telas menores */
-    max-width: 600px; /* Limita o tamanho em telas maiores */
+    width: 90%;
+    max-width: 600px;
     box-sizing: border-box;
 }
 
@@ -254,7 +254,7 @@ footer {
 .modal-content {
     font-family: Arial, sans-serif;
     color: #f1f1f1;
-    position: relative; /* Necessário para o botão de fechar */
+    position: relative;
 }
 
 .close {
@@ -289,7 +289,7 @@ footer {
 
 @media (max-width: 768px) {
     .modal {
-        padding: 15px; /* Reduz o padding em telas menores */
+        padding: 15px;
     }
 
     .close {
