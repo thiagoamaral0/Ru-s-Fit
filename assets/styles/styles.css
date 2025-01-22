@@ -285,24 +285,35 @@ footer {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.estrelas {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.estrelas .fa-star {
+    color: #ffd700;
+    font-size: 20px;
 }
 
 @media (max-width: 768px) {
-    .modal {
+    .depoimento {
         padding: 15px;
+        gap: 8px;
     }
 
-    .close {
-        top: 5px;
-        right: 5px;
-        font-size: 20px;
-    }
-
-    .depoimentos {
-        gap: 15px;
+    .estrelas .fa-star {
+        font-size: 18px;
     }
 }
-
 
 #order-now {
     text-align: center;
@@ -422,7 +433,6 @@ footer {
     border-radius: 8px;
 }
 
-/* Centraliza e alinha os slides */
 .slider-container {
     display: flex;
     justify-content: center;
