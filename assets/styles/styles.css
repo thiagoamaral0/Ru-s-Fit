@@ -241,16 +241,20 @@ footer {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     padding: 20px;
     transition: opacity 0.3s ease-in-out;
-    min-width: 600px;
+    width: 90%; /* Responsivo: Usa 90% da largura em telas menores */
+    max-width: 600px; /* Limita o tamanho em telas maiores */
+    box-sizing: border-box;
 }
 
 .modal.show {
+    display: block;
     opacity: 1;
 }
 
 .modal-content {
     font-family: Arial, sans-serif;
-    color: #333;
+    color: #f1f1f1;
+    position: relative; /* Necessário para o botão de fechar */
 }
 
 .close {
@@ -260,6 +264,14 @@ footer {
     font-size: 24px;
     color: #f00;
     cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.close:hover {
+    background: rgba(255, 255, 255, 0.4);
 }
 
 .depoimentos {
@@ -274,6 +286,23 @@ footer {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+@media (max-width: 768px) {
+    .modal {
+        padding: 15px; /* Reduz o padding em telas menores */
+    }
+
+    .close {
+        top: 5px;
+        right: 5px;
+        font-size: 20px;
+    }
+
+    .depoimentos {
+        gap: 15px;
+    }
+}
+
 
 #order-now {
     text-align: center;
