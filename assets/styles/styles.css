@@ -242,25 +242,26 @@ footer {
     padding: 20px;
     transition: opacity 0.3s ease-in-out;
     min-width: 600px;
-  }
-  
-  .modal.show {
+}
+
+.modal.show {
     opacity: 1;
-  }
-  
-  .modal-content {
+}
+
+.modal-content {
     font-family: Arial, sans-serif;
     color: #333;
-  }
-  
-  .close {
+}
+
+.close {
     position: absolute;
     top: 10px;
     right: 10px;
     font-size: 24px;
     color: #f00;
     cursor: pointer;
-  }
+}
+
 .depoimentos {
     display: flex;
     flex-direction: column;
@@ -324,13 +325,6 @@ footer {
     color: #81C784;
 }
 
-/*.order-image img {*/
-/*    max-width: 100%;*/
-/*    height: auto;*/
-/*    border-radius: 10px;*/
-/*    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);*/
-/*    margin-top: 20px;*/
-/*}*/
 
 @media (max-width: 768px) {
     .contact-options {
@@ -341,8 +335,8 @@ footer {
 }
 
 #student-nutrition {
-    background-color: #333; /* Fundo escuro */
-    color: #f1f1f1; /* Texto branco */
+    background-color: #333;
+    color: #f1f1f1;
     border-radius: 10px;
     padding: 40px;
     margin-top: 40px;
@@ -351,7 +345,7 @@ footer {
 
 #student-nutrition h2 {
     font-size: 2rem;
-    color: #388E3C; /* Verde saudável */
+    color: #388E3C;
     margin-bottom: 20px;
 }
 
@@ -370,7 +364,7 @@ footer {
 }
 
 .topic {
-    background-color: #444; /* Fundo escuro para os tópicos */
+    background-color: #444;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -387,7 +381,7 @@ footer {
 
 .topic h3 {
     font-size: 1.5rem;
-    color: #81C784; /* Verde mais suave */
+    color: #81C784;
     margin-bottom: 10px;
 }
 
@@ -398,6 +392,65 @@ footer {
     padding: 10px;
     border-radius: 8px;
 }
+
+/* Centraliza e alinha os slides */
+.slider-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.slide {
+    text-align: center;
+    max-width: 300px;
+    flex: 1 1 calc(33.33% - 20px);
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.price {
+    font-size: 1.2rem;
+    color: #4CAF50;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .slider-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slide {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    .slide img {
+        max-height: 250px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .slide img {
+        max-height: 200px;
+    }
+
+    .price {
+        font-size: 1rem;
+    }
+}
+
 
 @media (max-width: 768px) {
     .nutrition-topics {
